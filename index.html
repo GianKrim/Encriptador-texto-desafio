@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="presentacion__imagen" src="./assets/Frame 6.png" alt="Letra a en minuscula">
+        <h1 class="presentacion__contenido__titulo">ENCRIPTADOR DE TEXTO</h1>
+    </header>
+
+    <main class="presentacion">
+        
+        <section class="presentacion__contenido">
+            <textarea  class="texto__ingresar" type="text" placeholder="ingrese el texto aqui"></textarea>
+                     <p class="minuscula"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="#707070" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2"/></svg>
+                    Sólo letras minúsculas y sin acentos</p> 
+
+                <div class="botones">
+                    <button class="contenido__boton__encriptar" onclick="encriptarTexto();" >Encriptar</button>
+                    <button class="contenido__boton__desencriptar" onclick="desencriptarTexto();">Desencriptar</button>    
+                </div>
+       </section>  
+
+       <section class="presentacion__resultado">
+        <p id="texto__resultado" class="negativo"></p>
+              <button id="contenido__boton__copiar" class="negativo" onclick="copiar(resultado);">Copiar</button>
+             <img class="imagen__muñeco" src="./assets/Muñeco.png" alt="persona con lupa">      
+         <div>
+             <p class="texto__salida">Ningún mensaje fue encontrado</p>
+             <p class="texto__salida__encriptador">ingresa el texto que desees encriptar o desencriptar.</p>
+         </div>
+       </section>
+
+    </main>
+
+    <footer>
+       <p>Desarrollado por Gian Kristhiam Marin Mendez</p> 
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
